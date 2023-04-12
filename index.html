@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HỆ THỐNG TỰ LUYỆN CHỮ VIẾT TIẾNG KHMER</title>
+    <link rel="stylesheet" href="./home_css.css">
+    <link rel="stylesheet" href="./nav.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer"
+    />
+</head>
+<body id="body">
+  <header id="header">
+    <h1>HỆ THỐNG TỰ LUYỆN CHỮ VIẾT TIẾNG KHMER NAM BỘ</h1><div>Hướng dẫn học viết chữ Khmer cơ bản</div>
+  </header>
+  <div class="toggel_btn" onclick="ativeDropDownMenu()" id="toggel_btn">
+    <i class="fa-solid fa-bars"></i>
+  </div>
+  <nav>
+      <ul>
+        <li>
+          <a href="#">Trang chủ</a>
+        </li>
+        <li>
+          <a href="./page/phu_am/phu_am.html" >Phụ âm</a>
+        </li>
+        <li>
+           <a href="./page/nguyen_am/nguyen_am.html" >Nguyên âm</a>
+        </li>
+        <li>
+          <a href="./page/nguyen_am_doc_lap/nguyen_am_dl.html">Nguyên âm độc lập</a>
+        </li>
+        <li>
+          <a href="./page/consonant_vowel/consonant_vowel.html">Phụ âm chồng vần</a>
+        </li>
+        <li>
+          <a href="./page/number/number.html">Chữ số</a>
+        </li>
+        <li>
+          <a href="./page/consonant_/consonant_.html">Phụ âm gửi chân</a>
+        </li>
+      </ul>
+    </nav>
+    
+    
+    <div id="padding"><p></p><p></p></div>
+    <div class="home">
+        
+        <div class="home-" id="consonants" style="--clr:#1e9bff;" onclick="open_consonant()"><h3>Phụ âm</h3></div>
+        <div class="home-" id="vowel" style="--clr:#ff1867;"  onclick="open_vowel()"><h3>Nguyên âm</h3></div>
+        <div class="home-" id="vowel_idp" style="--clr:#f908b1;"  onclick="open_vowel_idp()"><h3>Nguyên âm độc lập</h3></div>
+        <div class="home-" id="number" style="--clr:#08aaaa;"  onclick="open_number()"><h3>Chữ số</h3></div>
+        <div class="home-" id="consonant_vowel" style="--clr:#08ac89;"  onclick="open_consonant_vowel()"><h3>Phụ Âm Chồng Vần</h3></div>
+        <div class="home-" id="consonant_" style="--clr:#067f39;"  onclick="open_consonant_()"><h3>Phụ Âm Gửi Chân</h3></div>
+        
+    </div>
+    </div>
+    <div class="dropDown" id="dropDown">
+      <ul class="linkDropDown">
+        <li>
+          <a href="#">Trang chủ</a>
+        </li>
+        <li>
+          <a href="./page/phu_am/phu_am.html" >Phụ âm</a>
+        </li>
+        <li>
+           <a href="./page/nguyen_am/nguyen_am.html" >Nguyên âm</a>
+        </li>
+        <li>
+          <a href="./page/nguyen_am_doc_lap/nguyen_am_dl.html">Nguyên âm độc lập</a>
+        </li>
+        <li>
+          <a href="./page/consonant_vowel/consonant_vowel.html">Phụ âm chồng vần</a>
+        </li>
+        <li>
+          <a href="./page/number/number.html">Chữ số</a>
+        </li>
+        <li>
+          <a href="./page/consonant_/consonant_.html">Phụ âm gửi chân</a>
+        </li>
+        <li class="dropdown_TracNghiem">
+          <a href="./page/tracNghiem/tracNghiem.html">Làm trắc nghiệm</a>
+        </li>
+    </ul>
+    </div>
+    <button class="openPractical" onclick="openPractical()">Làm trắc nghiệm</button>
+</body>
+<script src="./home_scrip.js"></script>
+<script src="./dropDown_Scrip.js"></script>
+</html>
